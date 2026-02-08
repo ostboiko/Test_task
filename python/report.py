@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from collections import Counter
 import os
 
-AIRTABLE_TOKEN = os.getenv("AIRTABLE_TOKEN")
+token = os.getenv("AIRTABLE_TOKEN")
 BASE_ID = "appoRz29MiPqvJ3i4"
 TABLE_NAME = "Requests"
 
