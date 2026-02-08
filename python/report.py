@@ -3,6 +3,8 @@ import csv
 from datetime import datetime, timedelta
 from collections import Counter
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 token = os.getenv("AIRTABLE_TOKEN")
 BASE_ID = "appoRz29MiPqvJ3i4"
@@ -14,7 +16,7 @@ CONSULTANTS_URL = f"https://api.airtable.com/v0/{BASE_ID}/{CONSULTANTS_TABLE}"
 URL = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"
 
 HEADERS = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {token}",
     "Content-Type": "application/json"
 }
 
